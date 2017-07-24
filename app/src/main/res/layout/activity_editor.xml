@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EditorActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundDark">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/frame_layout">
+
+            <ImageView
+            style="@style/detail_image"
+            android:id="@+id/edit_fragrance_image"
+            tools:src="@drawable/fragrance_dark"/>
+
+            <TextView
+                style="@style/image_description_style"
+                android:id="@+id/image_description"
+                android:text="@string/change_image"
+               />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/field_description"
+                    android:id="@+id/name_description"
+                    android:text="@string/description_name" />
+
+                <EditText
+                    style="@style/field_edit_value"
+                    android:id="@+id/edit_fragrance_name"
+                    android:hint="Name"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/field_description"
+                    android:id="@+id/brand_description"
+                    android:text="@string/description_brand" />
+
+                <EditText
+                    style="@style/field_edit_value"
+                    android:id="@+id/edit_fragrance_brand"
+                    android:hint="@string/brand_hint"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/field_description"
+                    android:id="@+id/concentration_description"
+                    android:text="@string/description_concentration" />
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/concentration_spinner"
+                        android:layout_height="48dp"
+                        android:layout_width="wrap_content"
+                        android:paddingRight="16dp"
+                        android:spinnerMode="dropdown"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/field_description"
+                    android:id="@+id/price_description"
+                    android:text="@string/description_price_editor" />
+
+                <EditText
+                    style="@style/field_edit_value"
+                    android:id="@+id/edit_fragrance_price"
+                    android:hint="@string/price_hint"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/field_description"
+                    android:id="@+id/purchase_price_description"
+                    android:text="@string/description_purchase_price_editor" />
+
+                <EditText
+                    style="@style/field_edit_value"
+                    android:id="@+id/edit_fragrance_purchase_price"
+                    android:hint="@string/purchase_price_hint"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/field_description"
+                    android:text="@string/description_in_stock" />
+
+                <EditText
+                    style="@style/field_edit_value"
+                    android:id="@+id/edit_fragrance_in_stock"
+                    android:hint="@string/in_stock_hint"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/field_description"
+                    android:id="@+id/mail_description"
+                    android:text="@string/description_mail" />
+
+                <EditText
+                    style="@style/field_edit_value"
+                    android:id="@+id/edit_fragrance_supplier_mail"
+                    android:hint="@string/mail_hint"/>
+
+            </LinearLayout>
+
+            <EditText
+                style="@style/description_style"
+                android:id="@+id/edit_fragrance_description"
+                android:hint="@string/description_hint"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

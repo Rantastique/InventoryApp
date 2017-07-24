@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Spacing dimensions -->
+    <dimen name="spacing_xsmall">2dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">12dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="spacing_xlarge">20dp</dimen>
+
+    <!-- Image dimensions -->
+    <dimen name="image_small_width">80dp</dimen>
+    <dimen name="image_small_height">100dp</dimen>
+
+    <dimen name="image_medium_width">190dp</dimen>
+    <dimen name="image_medium_height">230dp</dimen>
+
+    <!-- Button dimensions -->
+    <dimen name="button_sign_width">40dp</dimen>
+    <dimen name="button_sign_heigth">40dp</dimen>
+
+    <dimen name="button_text_height">40dp</dimen>
+
+    <!-- Font sizes -->
+    <dimen name="textsize_xsmall">10sp</dimen>
+    <dimen name="textsize_small">12sp</dimen>
+    <dimen name="textsize_medium">16sp</dimen>
+    <dimen name="textsize_large">20sp</dimen>
+    <dimen name="textsize_xlarge">24sp</dimen>
+    <dimen name="textsize_xxlarge">28sp</dimen>
+
+</resources>

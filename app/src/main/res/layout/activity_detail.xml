@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DetailActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundDark">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"  >
+
+        <LinearLayout
+            style="@style/frame_layout">
+
+            <ImageView
+                style="@style/detail_image"
+                android:id="@+id/detail_fragrance_image"
+                tools:src="@drawable/fragrance_dark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/field_description"
+                    android:text="@string/description_name" />
+
+                <TextView
+                    style="@style/field_value"
+                    android:id="@+id/detail_fragrance_name"
+                    tools:text="Name"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/field_description"
+                    android:text="@string/description_brand"/>
+
+                <TextView
+                    style="@style/field_value"
+                    android:id="@+id/detail_fragrance_brand"
+                    tools:text="Brand"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/field_description"
+                    android:text="@string/description_concentration"/>
+
+                <TextView
+                    style="@style/field_value"
+                    android:id="@+id/detail_fragrance_concentration"
+                    tools:text="Concentration"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/field_description"
+                    android:text="@string/description_in_stock"
+                    android:layout_gravity="center_vertical"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <Button
+                        style="@style/smallButton"
+                        android:id="@+id/detail_decrement_stock_info"
+                        android:text="@string/decrement_button" />
+
+                    <TextView
+                        style="@style/in_stock_style"
+                        android:id="@+id/detail_fragrance_in_stock"
+                        tools:text="7" />
+
+                    <Button
+                        style="@style/smallButton"
+                        android:id="@+id/detail_increment_stock_info"
+                        android:text="@string/increment_button" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/field_description"
+                    android:text="@string/description_price"/>
+
+                <TextView
+                    style="@style/field_value"
+                    android:id="@+id/detail_fragrance_price"
+                    tools:text="Price"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/field_description"
+                    android:text="@string/description_purchase_price"/>
+
+                <TextView
+                    style="@style/field_value"
+                    android:id="@+id/detail_fragrance_purchase_price"
+                    tools:text="Purchase Price"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/field_description"
+                    android:text="@string/description_mail"/>
+
+                <TextView
+                    style="@style/field_value"
+                    android:id="@+id/detail_fragrance_supplier_mail"
+                    tools:text="Supplier mail"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/field_description"
+                    android:text="@string/description_order" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                <Button
+                    style="@style/textButton"
+                    android:id="@+id/send_mail"
+                    android:text="@string/send_order"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/description_style"
+                android:id="@+id/detail_fragrance_description" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

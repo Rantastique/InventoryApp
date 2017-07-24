@@ -1,0 +1,197 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorButtonNormal">@color/colorBackgroundDark</item>
+        <item name="colorButtonNormal">@color/colorBackgroundDark</item>
+    </style>
+
+    <!-- Styles for the empty state view -->
+
+    <style name="empty_state_layout">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:padding">@dimen/spacing_xlarge</item>
+        <item name="android:background">@color/colorBackgroundLight</item>
+    </style>
+
+    <style name="empty_state_title">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingTop">@dimen/spacing_small</item>
+        <item name="android:textSize">@dimen/textsize_large</item>
+        <item name="android:color">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="empty_state_text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingTop">@dimen/spacing_small</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:color">@color/colorPrimary</item>
+    </style>
+
+
+    <!-- Styles for list_item elements -->
+
+    <style name="list_item_container">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">@dimen/spacing_xsmall</item>
+        <item name="android:background">@color/colorBackgroundLight</item>
+        <item name="android:padding">@dimen/spacing_small</item>
+    </style>
+
+    <style name="list_text_layout_left">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="list_text_layout_right">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">right</item>
+    </style>
+
+    <style name="list_image">
+        <item name="android:layout_height">@dimen/image_small_height</item>
+        <item name="android:layout_width">@dimen/image_small_width</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:padding">@dimen/spacing_small</item>
+
+    </style>
+
+    <style name="list_textview_left">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">@dimen/spacing_small</item>
+        <item name="android:paddingRight">@dimen/spacing_small</item>
+        <item name="android:paddingBottom">@dimen/spacing_xsmall</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="list_textview_right">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">@dimen/spacing_small</item>
+        <item name="android:paddingRight">@dimen/spacing_small</item>
+        <item name="android:paddingBottom">@dimen/spacing_xsmall</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:layout_gravity">end</item>
+    </style>
+
+    <style name="list_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/button_text_height</item>
+        <item name="android:focusable">false</item>
+        <item name="android:textColor">@color/colorBackgroundLight</item>
+        <item name="android:textSize">@dimen/textsize_xsmall</item>
+        <item name="android:text">@string/sell_one</item>
+    </style>
+
+    <!-- Styles for activity_detail and activity_editor elements -->
+
+    <style name="frame_layout">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">@dimen/spacing_large</item>
+        <item name="android:paddingBottom">@dimen/spacing_xlarge</item>
+        <item name="android:background">@color/colorBackgroundLight</item>
+    </style>
+
+    <style name="detail_image">
+        <item name="android:layout_height">@dimen/image_medium_height</item>
+        <item name="android:layout_width">@dimen/image_medium_width</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">@dimen/spacing_medium</item>
+    </style>
+
+    <style name="field_description">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_weight">1.2</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:layout_gravity">end|center_vertical</item>
+        <item name="android:textSize">@dimen/textsize_medium</item>
+        <item name="android:paddingBottom">@dimen/spacing_xsmall</item>
+        <item name="android:paddingRight">@dimen/spacing_small</item>
+        <item name="android:paddingLeft">@dimen/spacing_small</item>
+    </style>
+
+    <style name="field_value">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">end|center_vertical</item>
+        <item name="android:textSize">@dimen/textsize_medium</item>
+        <item name="android:paddingBottom">@dimen/spacing_xsmall</item>
+        <item name="android:paddingLeft">@dimen/spacing_small</item>
+        <item name="android:paddingRight">@dimen/spacing_small</item>
+    </style>
+
+    <style name="field_edit_value">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">0.8</item>
+        <item name="android:textSize">@dimen/textsize_medium</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_xsmall</item>
+        <item name="android:paddingLeft">@dimen/spacing_small</item>
+        <item name="android:paddingRight">@dimen/spacing_small</item>
+    </style>
+
+    <style name="description_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/textsize_medium</item>
+        <item name="android:padding">@dimen/spacing_medium</item>
+    </style>
+
+    <style name="in_stock_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_medium</item>
+        <item name="android:paddingBottom">@dimen/spacing_xsmall</item>
+        <item name="android:paddingLeft">@dimen/spacing_small</item>
+        <item name="android:paddingRight">@dimen/spacing_small</item>
+    </style>
+
+    <style name="image_description_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:padding">@dimen/spacing_medium</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="textButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/colorBackgroundLight</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <style name="smallButton">
+        <item name="android:layout_height">@dimen/button_sign_heigth</item>
+        <item name="android:layout_width">@dimen/button_sign_width</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBackgroundLight</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+</resources>

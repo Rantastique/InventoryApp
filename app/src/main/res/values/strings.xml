@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">PerfumeryStockApp</string>
+
+    <!-- Strings for displaying if a fragrance is in stock or not -->
+
+    <string name="in_stock">In stock</string>
+    <string name="not_in_stock">Not in stock</string>
+    <string name="stock">Stock: </string>
+
+    <!-- Strings for the menus -->
+
+    <string name="menu_save">Save</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_delete_all">Delete All</string>
+    <string name="menu_insert_dummy">Insert Dummy Data</string>
+
+    <!-- Strings for Buttons -->
+
+    <string name="sell_one">sell one</string>
+    <string name="decrement">-</string>
+    <string name="increment">+</string>
+    <string name="send_order">send order</string>
+
+    <!-- Strings for Empty State View -->
+
+    <string name="empty_title">Empty Fragrance Database</string>
+    <string name="empty_text">Click on the button below to add a new fragrance</string>
+
+    <!-- Strings for the fields that describe what kind of info is displayed/needed -->
+
+    <string name="description_name">Name: </string>
+    <string name="description_brand">Brand: </string>
+    <string name="description_concentration">Concentration: </string>
+    <string name="description_in_stock">Bottles in stock: </string>
+    <string name="description_price">Price: </string>
+    <string name="description_price_editor">Price in cents: </string>
+    <string name="description_purchase_price">Purchase price: </string>
+    <string name="description_purchase_price_editor">Purchase price in cents:</string>
+    <string name="description_mail">Supplier eMail: </string>
+    <string name="description_order">Order by eMail: </string>
+
+    <!-- Strings for the concentration values -->
+
+    <string name="concentration_unknwon">Concentration unknown</string>
+    <string name="parfum">Parfum</string>
+    <string name="eau_de_parfum">Eau de Parfum</string>
+    <string name="eau_de_toilette">Eau de Toilette</string>
+    <string name="eau_de_cologne">Eau de Cologne</string>
+    <string name="other">Other</string>
+
+    <!-- Strings used in DetailActivity -->
+
+    <string name="click_to_set_price">Set price</string>
+    <string name="click_to_set_purchase_price">Set purchase price</string>
+    <string name="decrement_button">-</string>
+    <string name="increment_button">+</string>
+    <string name="send_mail_button">Order</string>
+
+    <!-- Strings used in EditorActivity -->
+
+    <string name="label_add">Add Fragrance</string>
+    <string name="label_edit">Edit Fragrance</string>
+    <string name="change_image">Click on the picture to change image</string>
+
+    <!-- Strings for delete, edit and update toast messages -->
+
+    <string name="item_not_deleted">Fragrance couldn\'t be deleted</string>
+    <string name="item_deleted">Fragrance deleted</string>
+
+    <string name="new_item_saved">New fragrance added</string>
+    <string name="new_item_not_saved">Couldn\'t save the fragrance</string>
+
+    <string name="update_successful">Fragrance updated</string>
+    <string name="update_failed">Couldn\'t update fragrance</string>
+
+    <!-- Strings used in the FragranceProvider -->
+
+    <string name="matcher_iae">Cannot query unknwon URI. Current URI value: </string>
+    <string name="name_iae">Fragrance requires a valid name. Current name value: </string>
+    <string name="brand_iae">Fragrance requires a valid brand. Current brand value: </string>
+    <string name="concentration_iae">Fragrance requires a valid concentration. Current concentration value: </string>
+    <string name="price_iae">Fragrance requires a valid price. Current price value: </string>
+    <string name="purchase_price_iae">Fragrance requires a valid purchase price. Current purchase price value: </string>
+    <string name="stock_info_iae">Fragrance requires a valid stock_info. Current stock_info value: </string>
+
+
+    <!-- Strings for the dialog messages -->
+
+    <string name="unsaved_changes_dialog_msg">There are unsaved changes.</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Back to Editor</string>
+
+    <string name="item_delete_dialog_msg">Do you really want to delete this fragrance?</string>
+    <string name="item_delete">Delete fragrance</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="table_delete_dialog_msg">Do you really want to delete ALL fragrances?</string>
+    <string name="table_delete">Delete all fragrances</string>
+
+    <!-- Strings for error messages -->
+
+    <string name="name_error">Please enter a name</string>
+    <string name="brand_error">Please enter a brand</string>
+    <string name="price_error">Please enter a valid price</string>
+    <string name="purchase_price_error">Please enter a valid purchase price</string>
+    <string name="in_stock_error">The number of bottles in stock can\'t be less than 0</string>
+    <string name="supplier_mail_error">Please enter a valid eMail address</string>
+
+    <!-- Strings for empty values -->
+
+    <string name="empty_mail">Please add an email address</string>
+    <string name="empty_description">No description has been added so far</string>
+
+    <!-- Hints for EditTexts -->
+
+    <string name="name_hint">Fragrance name</string>
+    <string name="brand_hint">Brand name</string>
+    <string name="price_hint">Enter price in cents</string>
+    <string name="purchase_price_hint">Enter purchase price in cents</string>
+    <string name="in_stock_hint">Enter number of bottles in stock</string>
+    <string name="mail_hint">Enter supplier\'s email address</string>
+    <string name="description_hint">Enter a description</string>
+
+
+
+</resources>

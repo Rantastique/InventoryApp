@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/colorBackgroundDark"
+    android:padding="@dimen/spacing_small">
+
+    <LinearLayout
+        style="@style/list_item_container">
+
+        <ImageView
+            style="@style/list_image"
+            android:id="@+id/fragrance_image"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+            style="@style/list_text_layout_left">
+
+            <TextView
+                style="@style/list_textview_left"
+                android:id="@+id/fragrance_name"
+                tools:text="Name"/>
+
+            <TextView
+                style="@style/list_textview_left"
+                android:id="@+id/fragrance_brand"
+                tools:text="Brand"/>
+
+
+            <TextView
+                style="@style/list_textview_left"
+                android:id="@+id/fragrance_in_stock"
+                tools:text="In Stock" />
+
+            <Button
+                style="@style/list_button"
+                android:id="@+id/fragrance_decrement_in_stock_button" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/list_text_layout_right">
+
+            <TextView
+                style="@style/list_textview_right"
+                android:id="@+id/fragrance_concentration"
+                tools:text="Concentration" />
+
+            <TextView
+                style="@style/list_textview_right"
+                android:id="@+id/fragrance_price"
+                tools:text="Price"/>
+
+            <TextView
+                style="@style/list_textview_right"
+                android:id="@+id/fragrance_in_stock_info"
+                tools:text="In Stock Info" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

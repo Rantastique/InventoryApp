@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.perfumerystockapp.OverviewActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundDark">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#00000000">
+
+    </ListView>
+
+    <RelativeLayout
+        style="@style/empty_state_layout"
+        android:id="@+id/empty_view">
+
+        <ImageView
+            android:id="@+id/empty_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/fragrance_dark"/>
+
+        <TextView
+            style="@style/empty_state_title"
+            android:id="@+id/empty_title_text"
+            android:layout_below="@+id/empty_image"
+            android:text="@string/empty_title" />
+
+        <TextView
+            style="@style/empty_state_text"
+            android:id="@+id/empty_subtitle_text"
+            android:layout_below="@+id/empty_title_text"
+            android:text="@string/empty_text"
+            />
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:src="@drawable/fragrance_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/spacing_medium"/>
+
+</RelativeLayout>

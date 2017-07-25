@@ -625,9 +625,10 @@ public class EditorActivity extends AppCompatActivity implements
         purchasePriceString = purchasePriceEditText.getText().toString().trim();
         inStockString = inStockEditText.getText().toString().trim();
         supplierMailString = supplierMailEditText.getText().toString().trim();
+        descriptionString = descriptionEditText.getText().toString().trim();
 
 
-        if (imageUri == null) {
+        if (imageUri == null || fragranceImageView.getDrawable() == null) {
             imageTextView.setText(R.string.add_image_error);
             return false;
         }
@@ -646,6 +647,10 @@ public class EditorActivity extends AppCompatActivity implements
         if (TextUtils.isEmpty(brandString)) {
             brandEditText.requestFocus();
             brandEditText.setError(getString(R.string.brand_error));
+            return false;
+        }
+
+        if (concentrationInt < 0 || concentrationInt > 5) {
             return false;
         }
 
@@ -668,17 +673,17 @@ public class EditorActivity extends AppCompatActivity implements
             return false;
         }
 
-        // It's okay to leave the mail adress blank (this case is handled when the values are set to the respective fields
-        // However, the email adress should contain @
-        if (!TextUtils.isEmpty(supplierMailString) && !supplierMailString.contains("@")) {
+        if ((!TextUtils.isEmpty(supplierMailString) && !supplierMailString.contains("@")) || (TextUtils.isEmpty(supplierMailString))) {
             supplierMailEditText.requestFocus();
             supplierMailEditText.setError(getString(R.string.supplier_mail_error));
             return false;
         }
 
-        // It's okay to leave the description blank, the case of an empty description value is
-        // handled when setting the values to the respective views
-        descriptionString = descriptionEditText.getText().toString().trim();
+        if (TextUtils.isEmpty(descriptionString)) {
+            descriptionEditText.requestFocus();
+            descriptionEditText.setError(getString(R.string.description_error));
+            return false;
+        }
 
         return true;
     }

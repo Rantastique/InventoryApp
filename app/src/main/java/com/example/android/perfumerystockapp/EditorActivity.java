@@ -650,19 +650,19 @@ public class EditorActivity extends AppCompatActivity implements
         }
 
 
-        if (Integer.valueOf(priceString) < 0) {
+        if (TextUtils.isEmpty(priceString) || Integer.valueOf(priceString) < 0) {
             priceEditText.requestFocus();
             priceEditText.setError(getString(R.string.price_error));
             return false;
         }
 
-        if (Integer.valueOf(purchasePriceString) < 0) {
+        if (TextUtils.isEmpty(purchasePriceString) || Integer.valueOf(purchasePriceString) < 0) {
             purchasePriceEditText.requestFocus();
             purchasePriceEditText.setError(getString(R.string.purchase_price_error));
             return false;
         }
 
-        if (Integer.valueOf(inStockString) < 0) {
+        if (TextUtils.isEmpty(inStockString) || Integer.valueOf(inStockString) < 0) {
             inStockEditText.requestFocus();
             inStockEditText.setError(getString(R.string.in_stock_error));
             return false;

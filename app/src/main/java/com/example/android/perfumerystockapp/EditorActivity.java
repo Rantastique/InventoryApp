@@ -24,6 +24,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.android.perfumerystockapp.data.FragranceContract.FragranceEntry;
@@ -52,6 +53,7 @@ public class EditorActivity extends AppCompatActivity implements
     private EditText supplierMailEditText;
     private EditText descriptionEditText;
     private ImageView fragranceImageView;
+    private TextView imageTextView;
 
     // Variables for the user input
     private String uriString = imageUri.toString();                     // Initialise to prevent NullPointerException
@@ -132,6 +134,7 @@ public class EditorActivity extends AppCompatActivity implements
         inStockEditText = (EditText) findViewById(R.id.edit_fragrance_in_stock);
         supplierMailEditText = (EditText) findViewById(R.id.edit_fragrance_supplier_mail);
         descriptionEditText = (EditText) findViewById(R.id.edit_fragrance_description);
+        imageTextView = (TextView) findViewById(R.id.image_description);
 
         // Set OnTouchListeners on all input fields to determine whether they have been touched or not
         fragranceImageView.setOnTouchListener(imageTouchListener);
@@ -623,7 +626,15 @@ public class EditorActivity extends AppCompatActivity implements
         inStockString = inStockEditText.getText().toString().trim();
         supplierMailString = supplierMailEditText.getText().toString().trim();
 
-        uriString = imageUri.toString();
+
+        if (imageUri == null) {
+            imageTextView.setText(R.string.add_image_error);
+            return false;
+        }
+        else {
+            uriString = imageUri.toString();
+            imageTextView.setText(R.string.change_image);
+        }
 
 
         if (TextUtils.isEmpty(nameString)) {
@@ -638,6 +649,7 @@ public class EditorActivity extends AppCompatActivity implements
             return false;
         }
 
+
         if (Integer.valueOf(priceString) < 0) {
             priceEditText.requestFocus();
             priceEditText.setError(getString(R.string.price_error));
@@ -647,6 +659,12 @@ public class EditorActivity extends AppCompatActivity implements
         if (Integer.valueOf(purchasePriceString) < 0) {
             purchasePriceEditText.requestFocus();
             purchasePriceEditText.setError(getString(R.string.purchase_price_error));
+            return false;
+        }
+
+        if (Integer.valueOf(inStockString) < 0) {
+            inStockEditText.requestFocus();
+            inStockEditText.setError(getString(R.string.in_stock_error));
             return false;
         }
 

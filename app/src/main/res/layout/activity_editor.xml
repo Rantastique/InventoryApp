@@ -99,7 +99,8 @@
                 <EditText
                     style="@style/field_edit_value"
                     android:id="@+id/edit_fragrance_price"
-                    android:hint="@string/price_hint"/>
+                    android:hint="@string/price_hint"
+                    android:inputType="number"/>
 
             </LinearLayout>
 
@@ -116,7 +117,8 @@
                 <EditText
                     style="@style/field_edit_value"
                     android:id="@+id/edit_fragrance_purchase_price"
-                    android:hint="@string/purchase_price_hint"/>
+                    android:hint="@string/purchase_price_hint"
+                    android:inputType="number"/>
 
             </LinearLayout>
 
@@ -132,7 +134,8 @@
                 <EditText
                     style="@style/field_edit_value"
                     android:id="@+id/edit_fragrance_in_stock"
-                    android:hint="@string/in_stock_hint"/>
+                    android:hint="@string/in_stock_hint"
+                    android:inputType="number"/>
 
             </LinearLayout>
 
